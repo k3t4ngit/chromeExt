@@ -1,0 +1,42 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "libs/polyfill.min.js",
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "browser_action": {    
+    "default_title": "ISkills Indore",      // optional; shown in tooltip
+    "default_popup": "popup.html"        // optional
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "background",
+    "clipboardRead",
+    "clipboardWrite",
+    "debugger",
+    "idle",
+    "management",
+    "notifications",
+    "pageCapture",
+    "tabs",
+    "storage",
+    "webNavigation",
+    "webRequest",
+    "*://*.google.com/"
+  ],
+  "web_accessible_resources": [
+    "images/icon-48.png"
+  ]
+}
